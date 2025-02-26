@@ -65,7 +65,11 @@ function validateBlogRequest(body: BlogRequestData): Response | null {
       }),
       {status: 400, headers: {"Content-Type": "application/json"}}
     )
-  } else if (!existingCategories.map(cat => cat.key).includes(body.category)) {
+  } else if (
+    !existingCategories
+      .map((cat: {key: string}) => cat.key)
+      .includes(body.category)
+  ) {
     return new Response(
       JSON.stringify({success: false, error: "Invalid category"}),
       {status: 400, headers: {"Content-Type": "application/json"}}
@@ -75,11 +79,6 @@ function validateBlogRequest(body: BlogRequestData): Response | null {
   if (!body.year) {
     return new Response(
       JSON.stringify({success: false, error: "Missing required field year"}),
-      {status: 400, headers: {"Content-Type": "application/json"}}
-    )
-  } else if (body.year.length > 4 || body.year.length < 4) {
-    return new Response(
-      JSON.stringify({success: false, error: "Year must be 4 digits"}),
       {status: 400, headers: {"Content-Type": "application/json"}}
     )
   }

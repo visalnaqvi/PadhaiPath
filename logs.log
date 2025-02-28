@@ -1,0 +1,29 @@
+
+> padaepartner@0.1.0 dev
+> next dev -p 3005
+
+   ▲ Next.js 15.1.7
+   - Local:        http://localhost:3005
+   - Network:      http://10.190.0.2:3005
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 5.1s
+ ○ Compiling /api/generate-blog ...
+ ✓ Compiled /api/generate-blog in 7.4s (462 modules)
+✅ Validation passed. Generating blog TSX code...
+ℹ️ Starting blog generation process for: "CUET UG 2025 Preparation: Subject-Wise Study Plan"
+ℹ️ Generating blog inner content...
+ℹ️ /home/visalnaqvi/PadhaiPath/data/category/data.json
+ℹ️ /home/visalnaqvi/PadhaiPath/data/blogs/2025/data.json
+ℹ️ /home/visalnaqvi/PadhaiPath/app/blogs/cuet-ug/2025/CUET-UG-2025-Preparation-Strategy/page.tsx
+ℹ️ Generating blog content for topic: "CUET UG 2025 Preparation: Subject-Wise Study Plan"
+ ✓ Compiled in 984ms (462 modules)
+✅ Blog content generated successfully
+ℹ️ Generating complete TSX code...
+ℹ️ Formatting final blog content...
+ℹ️ Updating data files...
+ℹ️ Updating category file...
+✅ Category file updated successfully
+ℹ️ Starting GitHub update process...
+ℹ️ adding to git
